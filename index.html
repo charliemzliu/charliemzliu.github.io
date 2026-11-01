@@ -4,38 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Charlie Liu</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 900px; margin: 0 auto; padding: 32px 20px; line-height: 1.6; color: #222; }
+        nav { margin-bottom: 44px; }
+        nav a { margin-right: 18px; color: #222; text-decoration: none; }
+        nav a:hover { text-decoration: underline; }
+        .links { display: flex; gap: 18px; flex-wrap: wrap; margin-top: 28px; }
+        .card { flex: 1 1 260px; border: 1px solid #ddd; border-radius: 12px; padding: 22px; text-decoration: none; color: #222; }
+        .card:hover { box-shadow: 0 3px 12px rgba(0,0,0,0.08); }
+        .card h2 { margin-top: 0; }
+    </style>
 </head>
 
 <body>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/projects/">Projects</a>
+        <a href="/photo/">Photos</a>
+    </nav>
 
     <h1>Charlie Liu</h1>
-
     <p>Welcome to my personal website.</p>
 
     <h2>About Me</h2>
-
     <p>
         I am a graduate student interested in statistics, mathematics,
         research, hiking, and photography.
     </p>
 
-    <h2>Projects</h2>
-
-    <h3>E-values for Statistical Inference</h3>
-
-    <p>
-        A report on e-variables and their applications to statistical inference.
-    </p>
-
-    <p>
-        <a href="STA422_final_MingzheLiu.pdf" target="_blank">
-            Read the paper (PDF)
+    <div class="links">
+        <a class="card" href="/projects/">
+            <h2>Projects</h2>
+            <p>Academic work, research, and selected papers.</p>
         </a>
-    </p>
 
-    <h2>Photos</h2>
-
-    <p>More photos coming soon.</p>
-
+        <a class="card" href="/photo/">
+            <h2>Photos</h2>
+            <p>Photography from travel, hiking, and everyday life.</p>
+        </a>
+    </div>
 </body>
 </html>
